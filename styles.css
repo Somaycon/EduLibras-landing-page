@@ -1,0 +1,168 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  /* Cor de fundo clara */
+  color: #2F2C79;
+  /* Cor do texto escura */
+}
+
+.logo-text {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 100px;
+  margin-right: 10px;
+}
+
+.header-text {
+  font-size: 16px;
+  /* Diminuir tamanho da fonte */
+  margin-right: 10px;
+}
+
+#arrow-button {
+  background: none;
+  border: none;
+  color: #2F2C79;
+  /* Cor do texto escura */
+  font-size: 12px;
+  /* Diminuir tamanho da fonte */
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.contato-text {
+  font-size: 18px;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.header-btn {
+  background-color: #2F2C79;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#dropdown-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f0f0f0;
+  display: none;
+}
+
+.dropdown-text-left,
+.dropdown-text-right {
+  width: 45%;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.main-text {
+  width: 70%;
+  /* Aumentar a largura do texto */
+}
+
+.main-text p {
+  font-size: 18px;
+  /* Aumentar tamanho da fonte */
+}
+
+.main-image {
+  width: 25%;
+  /* Reduzir a largura da imagem */
+}
+
+/* Media queries for responsiveness */
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo-text {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+
+  .header-buttons {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  #dropdown-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .dropdown-text-left,
+  .dropdown-text-right {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .main-text {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .main-image {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-text {
+    font-size: 14px;
+    /* Diminuir tamanho da fonte */
+  }
+
+  .contato-text {
+    font-size: 16px;
+  }
+
+  .header-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .main-text h1 {
+    font-size: 28px;
+  }
+
+  .main-text p {
+    font-size: 18px;
+    /* Aumentar tamanho da fonte */
+  }
+}
